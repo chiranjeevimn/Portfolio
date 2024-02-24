@@ -1,0 +1,167 @@
+﻿@page
+@model ProjectModel
+@{
+    ViewData["Title"] = "Project";
+}
+
+<h1>Project</h1>
+<style>
+    #Skills {
+        background-color: #f0cfa1;
+        color: green;
+    }
+
+    .subtitle {
+        text-align: center;
+    }
+
+        .subtitle span {
+            color: red;
+        }
+
+    .container1 {
+        width: 45%; /* Adjust the width as needed */
+        max-height: 500px;
+        padding: 10px;
+        margin-left: 10px; /* Adjust the margin as needed */
+    }
+
+    .container2 {
+        width: 45%;
+        max-height: 50px;
+        padding: 10px; /* Change margin-left to auto */
+        margin-right: 10px; /* Add margin-right for additional spacing */
+    }
+
+    .info {
+        margin-top: 10px;
+        color: green; /* Adjust the color as needed */
+        font-size: 20px; /* Adjust the font size as needed */
+    }
+
+    .progress-line {
+        background-color: lightgray;
+        height: 10px; /* Adjust the height as needed */
+        width: 100%; /* Adjust the width as needed */
+        border-radius: 10px; /* Adjust the border radius as needed */
+        overflow: hidden;
+        margin-top: 10px; /* Add a little margin at the top */
+    }
+
+        .progress-line span {
+            background-color: mediumpurple;
+            height: 100%;
+            display: block;
+            border-radius: 5px; /* Adjust the border radius to match .progress-line */
+        }
+</style>
+
+<section id="Skills">
+    <h1 class="subtitle">My <span>Skills</span></h1>
+    <div class="sec">
+        <div class="container1">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+
+                <!-- HTML Skill -->
+                <div class="bar">
+                    <i class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML <span class="addhtml">80%</span></span>
+                    </div>
+                    <div class="progress-line html">
+                        <span style="width: 80%;"></span>
+                    </div>
+                </div>
+
+                <!-- CSS Skill -->
+                <div class="bar">
+                    <i class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS <span class="addcss">75%</span></span>
+                    </div>
+                    <div class="progress-line css">
+                        <span style="width: 75%;"></span>
+                    </div>
+                </div>
+
+                <!-- Python Skill -->
+                <div class="bar">
+                    <i class='bx bxl-python'></i>
+                    <div class="info">
+                        <span>Python <span class="addpy">90%</span></span>
+                    </div>
+                    <div class="progress-line python">
+                        <span style="width: 90%;"></span>
+                    </div>
+                </div>
+
+                <!-- Java Skill -->
+                <div class="bar">
+                    <i class='bx bxl-java'></i>
+                    <div class="info">
+                        <span>Java <span class="addjava">85%</span></span>
+                    </div>
+                    <div class="progress-line java">
+                        <span style="width: 85%;"></span>
+                    </div>
+                </div>
+
+                <!-- C/C++ Skill -->
+                <div class="bar">
+                    <i class='bx bxl-c-plus-plus'></i>
+                    <div class="info">
+                        <p><span>C/C++ <span class="addc">70%</span></span></p>
+                    </div>
+                    <div class="progress-line cpls">
+                        <span style="width: 70%;"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container2">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars">
+
+                <!-- Problem Solving -->
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar path path-1" cx="10" cy="8" r="20"></circle>
+                    </svg>
+                    <div class="percentage"><p>60%</p></div>
+                    <div class="text"><p>Problem Solving</p></div>
+                </div>
+
+                <!-- Creativity -->
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar path path-2" cx="100" cy="80" r="80"></circle>
+                    </svg>
+                    <div class="percentage">70%</div>
+                    <div class="text">Creativity</div>
+                </div>
+
+                <!-- Communication -->
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar path path-3" cx="100" cy="80" r="80"></circle>
+                    </svg>
+                    <div class="percentage">80%</div>
+                    <div class="text">Communication</div>
+                </div>
+
+                <!-- Teamwork -->
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar path path-4" cx="100" cy="80" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Teamwork</div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,124 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "About";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+
+    <style>
+        body {
+            background-color: #cafaef;
+            background-size: cover;
+            background-position: center;
+            font-family: 'sans-serif', sans-serif;
+            color: lightpink;
+        }
+
+        .home-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .text-and-links {
+            max-width: 60%; /* Adjust the width as needed */
+        }
+
+        .img {
+            max-width: 40%; /* Adjust the width as needed */
+        }
+
+        .img img {
+            max-width: 70%;
+            height: 70%;
+            border-radius: 50%;
+        }
+
+        .home-sci {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0; /* Adjust the vertical margin as needed */
+        }
+
+        .home-sci a {
+            text-decoration: none;
+            color: palevioletred; /* Adjust the color as needed */
+            font-size: 24px; /* Adjust the font size as needed */
+            margin-top: 10px; /* Adjust the margin as needed */
+            margin: 0 10px;
+        }
+
+        .home-sci a img {
+            width: 50px; /* Adjust the width as needed */
+            height: 50px; /* Maintains aspect ratio */
+        }
+
+        .home-sci i {
+            display: block;
+        }
+
+        :root {
+            --primary-color: green; /* Example color code */
+        }
+
+        h1, h3, h4 {
+            color: var(--primary-color);
+        }
+
+        :root {
+            --secondary-color: yellow; /* Example color code */
+        }
+
+        .btn-box {
+            background-color: var(--secondary-color);
+            color: mediumvioletred;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".home-content").animate({ opacity: 1 }, 1000); /* Fade in animation */
+        });
+    </script>
+</head>
+<body>
+
+    <section class="home" id="Home">
+        <div class="home-content">
+            <div class="text-and-links">
+                <!-- Your existing content here -->
+                <h3>Hello, It's Me</h3>
+                <h1>CHIRANJEEVI M N</h1>
+                <h4 style="--i:6">I'm a student who is<br> passionate in <span class="text"></span></h4>
+
+                <div class="home-sci">
+                    <a target="_blank" href="https://www.linkedin.com/in/chiranjeevi-m-n/"><img src="./NewFolder/linkdin.png" alt="LinkedIn"> </a>
+                    <a target="_blank" href="https://www.instagram.com/coding_with_amrit/"><img src="./NewFolder/gmail.png" alt="Instagram"> </a>
+                    <a target="_blank" href=""><img src="https://boxicons.com/assets/icons/brand/brands/svg/217-youtube.svg" alt="YouTube"> </a>
+                    <a target="_blank" href="https://github.com/chiranjeevimn"><img src="./NewFolder/images.png" alt="GitHub"> </a>
+                </div>
+
+                <a href="https://drive.google.com/file/d/1hBubhcZXJNAHQI7B63mm6-MbswVWHKt2/view?usp=drive_link" style="--i:11" class="btn-box" target="_blank">Download Resume</a>
+            </div>
+
+            <div class="img">
+                <img src="./NewFolder/Chiranjeevi.jpg" class="responsive">
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
