@@ -8,6 +8,7 @@ html {
   }
 }
 
+
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
@@ -94,9 +95,9 @@ body {
     font-weight: 600;
 }
 
-    .abtbtn-box:hover {
-        box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
-    }
+.abtbtn-box:hover {
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50pc cyan, 0 0 100px cyan, 0 0 200px cyan;
+}
 
 /* Project */
 
@@ -110,17 +111,17 @@ body {
     padding-bottom: 10px;
 }
 
-    .main-text h2 {
-        font-size: 60px;
-        line-height: 1;
-        text-align: center;
-        padding: 20px;
-        padding-bottom: 40px;
-    }
+.main-text h2 {
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+}
 
-        .main-text h2 span {
-            color:darkgreen;
-        }
+.main-text h2 span {
+    color:darkgreen;
+}
 
 .serv-container {
     display: grid;
