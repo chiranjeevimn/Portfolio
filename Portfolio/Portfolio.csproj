@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\lib\app.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\lib\app.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\js\app.js" />
     <None Include="wwwroot\NewFolder\Chiranjeevi.jpg" />
     <None Include="wwwroot\NewFolder\cropedpic.JPG" />
   </ItemGroup>
